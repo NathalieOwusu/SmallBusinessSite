@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&family=Satisfy&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+</head>
+<title>Small business site</title>
+<style>
+body{
+  margin:0 auto;
+  max-width:500px;
+  background:#232;
+
+ 
+  }
+div{
+  text-align:center;
+  background-size: cover;
+  position: relative;
+  margin:40px 0 0 0;
+  border-radius: 20px;
+  height:316px;
+  width:500px;
+  
+  }
+  header{
+    position:relative;
+    top:50px;
+    }
+  
+h1{
+  font-family: "Rubik Glitch Pop", system-ui;
+  font-weight: 400;
+  font-size:100px;
+  font-style: normal;
+  color:sienna;
+  border:1px solid;
+  border-radius: 40%;
+  
+}
+
+    h2{
+  font-family: "Satisfy", cursive;
+  text-align: center;
+  font-weight: 400;
+  font-size:30px;
+  position:relative;
+  color:#bbbbbb;
+  bottom:105px;
+  font-style: normal; 
+}
+
+  p {
+    color: rgba(255, 255, 25);
+   background: -webkit-linear-gradient(bottom, rgba(255, 115, 1), rgba(50, 10, 0,.7));
+      background: -moz-linear-gradient(bottom, rgba(255, 115, 1), rgba(50, 10, 0,.7));
+    text-align:justify;
+    font-weight: normal;
+    line-height:20px;
+    position:absolute;
+    bottom:0;
+    margin:0;
+    height:30px;
+    transition: height .5s;
+    -webkit-transition: height .5s;
+    -moz-transition: height .5s;
+    }
+    
+    small{
+      opacity:0;
+      }
+  
+.AMA{ 
+  background: url("https://i.pinimg.com/474x/cf/85/e0/cf85e097898509088198e35dbba7f838.jpg");
+  }
+  .AFYA{
+   background:url("https://i.pinimg.com/474x/3c/e7/31/3ce7317b4eef0537fe24796e85b8ec70.jpg");
+    }
+.AKUA{
+  background:url("https://i.pinimg.com/474x/35/d6/c7/35d6c7c10fb299e0e76e5b35150a1ada.jpg");
+ 
+  }
+.price{
+  float:right;
+  }
+  .show-description p{
+    height:150px;
+    }
+   .show-description small{
+     opacity: 1;
+     }
+     
+   @media (max-width:500px){
+     h1{
+       font-size:63px;
+       line-height:90px;
+       }
+     
+     h2{
+       font-size:28px;
+       bottom:80
+       }
+     div{
+       margin:20px 0  30px 1.5px;
+       height: 300px;
+       width:316px
+      
+       }
+       p{
+         line-height:15px;
+         font-size:10px;
+         }
+         small{
+           font-size: 9px;
+           }
+     }   
+</style>
+
+<body>
+<header>
+<h1>iEarthGrl</h1>
+<h2> Creative hair design </h2>
+</header>
+
+
+
+ <div class="AMA"> 
+ <p>
+ <em>FLORAL FULANI PLAITS</em> <span class="price"> 
+ <strong>$250</strong>
+ </span><br />
+<small>Vibrant live flowers intertwine with meticulously crafted braids, creating a mesmerizing fusion of culture and creativity. These gravity-defying styles elevate hair into stunning architectural masterpieces, each adorned with the beauty of nature.</small>
+</p>
+</div>
+
+ <div class="AFYA">
+ <p>
+ <em>WEEPING WILLOW BRAIDS</em> <span class="price">
+ <strong>$450</strong>
+ </span><br />
+<small> A lush bouquet cascading from your crown, intertwined with intricate braids defying gravity. From cascading blooms to towering floral crowns, these styles exude elegance and celebrate the essence of African heritage in a breathtaking display of artistry and innovation.</small>
+</p>
+</div>
+
+ <div class="AKUA">
+ <p> 
+ <em>MARLEY MEADOW TWISTS</em> <span class="price">
+ <strong>$450</strong>
+ </span><br />
+<small>Elevate the hair into sculptural wonders, defying conventional limitations. These braids are are living expressions of heritage, spirituality, and creativity, deeply rooted in African traditions. They tell stories of resilience, unity, and the enduring beauty of African culture.</smmall>
+</p>
+</div>
+<script>
+$("div").on("click", function(){
+  $(this).toggleClass("show-description");
+  });
+</script>
+</body>
